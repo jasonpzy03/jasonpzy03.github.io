@@ -1,0 +1,57 @@
+/* Styling grid area about-us, using display flex, and defining it's width and height*/
+#about-us {
+    grid-area: about-us;
+    width: 100%;
+    height: 75vh;
+    background-color: rgb(12, 18, 34);
+    border: 0.5px solid rgb(131,140,169, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* about us wrapper that contains paragraphs, with top and bottom border to create divider */
+.about-us-wrapper {
+    border-top: 0.5px solid rgb(131,140,169, 0.5);
+    border-bottom: 0.5px solid rgb(131,140,169, 0.5);
+    width: 70%;
+    height: 60%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling the "ABOUT US" span */
+#about-us span {
+    background-color: rgb(19,42,59);
+    border: 0.5px solid rgb(108, 237, 224);
+    color: rgb(108, 237, 224);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 16px;
+    padding: 7px 30px;
+    margin-bottom: 30px;
+}
+
+/* Styling the paragraphs in about-us section */
+#about-us p {
+    text-align: justify;
+    font-size: 15.5px;
+    color: rgb(131,140,169);
+    width: 80%;
+}
+
+/* Styling the hyperlink that links to about-member section with team members individual info */
+#about-us a {
+    width: 80%;
+    text-align: right;
+    color: rgb(108, 237, 224);
+}
+
+/* bold tag will create a highlighting effect, with white color */
+#about-us b {
+    color: white;
+}

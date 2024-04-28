@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Personal Website Landing Page</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" href="./Assets/logo2.png" /> 
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="header.css" />
+        <link rel="stylesheet" href="home.css" />
+        <link rel="stylesheet" href="about-us.css" />
+        <link rel="stylesheet" href="about.css" />
+        <link rel="stylesheet" href="work.css" />
+        <link rel="stylesheet" href="services.css" />
+        <link rel="stylesheet" href="footer.css" />
+        <link rel="stylesheet" href="responsive-layout.css" />
+    </head>
+
+    <body>
+        <!-- the webpage is structured using grid layout -->
+        <div class="grid-container">
+            <!-- header -->
+            <div id="header">
+                <!-- navigation menus -->
+                <ul class="header-nav-menu">
+                    <button id="showbar" onclick="showBar()">☰</button>
+                    <li><a href="#about-us"><b>ABOUT</b></a></li>
+                    <li><a href="#work"><b>WORK</b></a></li>
+                    <li><a href="#services"><b>SERVICES</b></a></li>
+                </ul>
+                <!-- header logo and welcoming heading -->
+                <div class="header-logo">
+                    <a title="Home" href="#"><img id="logo" src="./Assets/logo1.png" alt="LastMinute Studios" width="160px" height="30px"></a>
+                    <h6 id="nav-logo-p">Welcome to our universe.</h6>
+                </div>
+                <!-- contact button -->
+                <a id="contact-us-btn" href="#"><b>Contact us</b></a>
+            </div>
+            <!-- home -->
+            <div class="home">
+                <!-- home title -->
+                <h1>Web Application Development and Design Studio</h1>
+                <!-- home navigation buttons -->
+                <div class="home-buttons">
+                    <a id="home-button-left" href="#about-us"><b>Learn about the team</b></a>
+                    <a id="home-button-right" href="#services"><b>See services</b></a>
+                </div>
+            </div>
+            <!-- contact-box -->
+            <div class="contact">
+                <h6>Provide email and we will reach out to you</h6>
+                <p>Don't miss out and get access to our services: front-end and back-end enquiries, full-stack development services, easy website deployment, learning resources and more.</p>
+                <input class="input" type="email" name="Email" placeholder="Email Address">
+                <p>By continuing, I agree to LastMinute Studios's <a href="">Privacy Policy</a> and <a href="">Terms of Service</a>.</p>
+                <button class="submit-btn">Submit</button>
+            </div>
+            <!-- about us section that introduces company's background -->
+            <div id="about-us">
+                <span>ABOUT US</span>
+                <!-- a wrapper with smaller size than parent div, with border top and down to create divider-->
+                <div class="about-us-wrapper">
+                    <p><b>LastMinute Studios</b> is an experienced team comprising three professional developers, with expertise in <b>UI/UX Design, Front-End Development, Animation, Photography, Author and Coaching</b>. We have been offering these services to meet our customers' needs with comprehensive service support and system.
+                        <br><br>Our results speak for itself, we have completed well <b>over 1.5k+ freelance orders globally across various platform</b> over the past <b>5 years</b>. We commit to quality and customer satisfaction as well as maintaining highest working standards and exceeding customer's expectation.</p>
+                    <a href="#about-member">&#8640 View our team members</a>
+                </div>
+            </div>
+            <!-- about section that introduces team members -->
+            <div id="about-member">
+                <!-- first member about div, given id about1 for the purpose of javascript changing to next teammate -->
+                <div class="about" id="about1">
+                    <!-- first member image -->
+                    <img src="./Assets/jasonPic.jpg" alt="PUA ZHI YING">
+                    <!-- first member description -->
+                    <div class="about-description">
+                        <img src="./Assets/logo2.png" alt="background">
+                        <h1>Pua Zhi Ying</h1>
+                        <h3>Software Engineering Student</h3>
+                        <h5>I focuses on pixel-perfect UI/UX design and front end development.</h5>
+                        <p>Back in 2019, I have first stepped into the realm of full-stack development, building my first ever website, <span class="highlight">homestay management web-app</span>. Until today, I am honoured to study in <span class="highlight">Universiti Teknologi Malaysia (UTM)</span> to pursue my <span class="highlight">Software Engineering Bachelor's Degree</span> and continue my exciting learning journey.</p>
+                        <p>There are other things that I would do when I'm not at the computer, I enjoy playing the guitar, badminton, hanging out with my cat and family and a little bit of reading session in the middle of the night. If you share the same interest, feel free to contact me!</p>
+                        <p id="about-desc-section">Programming Languages:</p>
+                        <!-- lists of programming skills -->
+                        <ul class="programming-languages">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Express</li>
+                            <li>Node.js</li>
+                            <li>PHP</li>
+                            <li>MongoDB</li>
+                        </ul>  
+                        <!-- member achievements -->
+                        <p id="about-desc-section">Achievements:</p>
+                        <div class="about-achievements">
+                            <span>2019</span>
+                            <h6>LEVEL UP @SCHOOLS GAME DEVELOPMENT STATE COMPETITION, 2nd runner-up</h6>
+                            <p>A Unity game development competition, held at MITEC, Kuala Lumpur. I have built a zombie endless wave shooting game with progressive weapons upgrades.</p>
+                            <ul class="programming-languages">
+                                <li>C#</li>
+                            </ul> 
+                        </div>
+                        <!-- button to next member -->
+                        <a class="next-member" onclick="nextAbout(2)">&#8640 Next Member</a>
+                        
+                    </div> 
+                </div>
+                <!-- second member about div, given id about2 for the purpose of javascript changing to next teammate -->
+                <div class="about" id="about2">
+                    <!-- second member image -->
+                    <img src="./Assets/jiahaoPic.jpeg" alt="TAM JIA HAO">
+                    <!-- second member description -->
+                    <div class="about-description" id="about2-desc">
+                        <img src="./Assets/logo2.png" alt="background">
+                        <h1>Tam Jia Hao</h1>    
+                        <h3>Software Engineering Student</h3>
+                        <h5>I have proficient experience in both front-end and back-end development.</h5>
+                        <p>Back in 2020, I was a <span class="highlight">science stream</span> student without any programming knowledge, I started learning website development skills online with my friends. Today, I'm proud to be pursuing <span class="highlight">Software Engineering Bachelor's Degree</span> at <span class="highlight">Universiti Teknologi Malaysia (UTM)</span> and I have gained practical skills in web development from <span class="highlight">Web Programming</span> course.</p>
+                        <p>Apart from my interest in computer-related activities, I play musical instruments like the guitar and violin, as well as basketball. Spending time with friends and family is important to me. If you share any of these interests, don't hesitate to reach out and connect with me!</p>
+                        <p id="about-desc-section">Programming Languages:</p>
+                        <!-- lists of programming skills -->
+                        <ul class="programming-languages">
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>MySQL</li>
+                        </ul>  
+                        <!-- member achievements -->
+                        <p id="about-desc-section">Achievements:</p>
+                        <div class="about-achievements">
+                            <span>2019</span>
+                            <h6>UNIFORMED BODY TEAM MARCHING STATE COMPETITION, 2nd runner-up</h6>
+                            <p>A state marching competition. I represented my school and the Malaysian Red Crescent, it was held at Sekolah Menengah Kebangsaan Kota Kulai, Kulai, Johor.</p>
+                            <ul class="programming-languages">
+                                <li>Teamwork</li>
+                            </ul>  
+                        </div>
+                        <!-- button to previous member -->
+                        <a class="previous-member" onclick="nextAbout(1)">&#8636 Previous Member</a>
+                        <!-- button to next member -->
+                        <a class="next-member" onclick="nextAbout(3)">&#8640 Next Member</a>
+                    </div> 
+                </div>
+                <!-- third member about div, given id about1 for the purpose of javascript changing to previous teammate -->
+                <div class="about" id="about3">
+                    <!-- third member image -->
+                    <img src="./Assets/kjtformalpic.jpg" alt="KUAN JI TONG">
+                    <!-- third member description -->
+                    <div class="about-description" id="about3-desc">
+                        <img src="./Assets/logo2.png" alt="background">
+                        <h1>Kuan Ji Tong</h1>
+                        <h3>Software Engineering Student</h3>
+                        <h5>I focuses backend development and data management.</h5>
+                        <p>Back in 2019, I began learning <span class="highlight">HTML and CSS</span> for the first time, but eventually abandoned it. Now, I am studying at <span class="highlight">Universiti Teknologi Malaysia (UTM)</span>, pursuing a <span class="highlight">Bachelor's Degree in Software Engineering</span>. This course has given me the opportunity to pick up my previous knowledge again and resume learning <span class="highlight">full stack development</span>.</p>
+                        <p>Moving on to hobbies, although my focus is on programming for my studies and profession, I find pleasure and relaxation in listening to Korean and Japanese songs. It's a delightful diversion from the complexities of coding and software engineering. Sometimes, in my free time, I also like to watch videos related to current affairs and political commentary on YouTube because it helps me stay informed about global events and diverse perspectives. If you share any of these interests, feel free to contact me!</p>
+                        <p id="about-desc-section">Programming Languages:</p>
+                        <!-- lists of programming skills -->
+                        <ul class="programming-languages">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>C#</li>
+                            <li>ASP.NET</li>
+                            <li>MySQL</li>
+                            <li>C++</li>
+                            <li>Java</li>
+                        </ul>  
+                        <!-- member achievements -->
+                        <p id="about-desc-section">Achievements:</p>
+                        <div class="about-achievements">
+                            <span>2024</span>
+                            <h6>Coming Soon...</h6>
+                        </div>
+                        <!-- button to previous member -->
+                        <a class="previous-member" onclick="nextAbout(2)">&#8636 Previous Member</a>
+                    </div> 
+                </div>
+            </div>
+             <!-- section to display our company's work -->
+            <div id="work">
+                <span>WORK</span>
+                <!-- a wrapper with smaller size than parent div, with border top and down to create divider -->
+                <div class="work-wrapper">
+                    <video width="70%" autoplay muted loop>
+                        <source src="./Assets/work.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                    <p><b>RUMAH JOHO Homestay management system</b> is one of our favourable projects that features a comprehensive booking system and user account management, as well as displaying the homestay information in the best possible way.</p>
+                </div>
+            </div>
+             <!-- section to promote our company's services -->
+            <div id="services">
+                <span>SERVICES</span>
+                <!-- a wrapper with smaller size than parent div, with border top and down to create divider -->
+                <div class="services-wrapper">
+                    <!-- div box with service information -->
+                    <div class="service-box">
+                        <h6 class="service-box-title">Web application</h6>
+                        <h1>$88 / month</h1>
+                        <p>We build a comprehensive web application designed specifically to your business needs.</p>
+                        <ul>
+                            <li>Customized design</li>
+                            <li>Comprehensive development</li>
+                            <li>Optimized code</li>
+                            <li>Responsive, smooth interactions</li>
+                            <li>Online communications</li>
+                        </ul>
+                        <a>&#8640 Purchase it now</a>
+                    </div>
+                    <!-- div box with service information -->
+                    <div class="service-box">
+                        <h6 class="service-box-title">Custom</h6>
+                        <h1>Custom Price</h1>
+                        <p>Do any of these plans not fulfill your current business requirements? We got you covered.</p>
+                        <p>Contact us - we will reach out to you and design a solution specifically for you!</p>
+                        <ul>
+                            <li>Designated solution plan</li>
+                            <li>Unique web style</li>
+                            <li>Highly maintainable & custommizable</li>
+                            <li>Physical meetings & communications</li>
+                        </ul>
+                        <a href="#">&#8640 Contact us</a>
+                    </div>
+                </div>
+            </div>
+            <!-- footer with social media links -->
+            <footer>
+
+                <div class="social-media">
+                    <a href="https://www.facebook.com/profile.php?id=100010743937944" target="_blank"><img src="./Assets/fb.png" alt="Facebook" width="15px" height="15px"></a>
+                    <a href="https://youtu.be/dQw4w9WgXcQ?si=8-XxXyIOlQNshLyI" target="_blank"><img src="./Assets/x.png" alt="Twitter / X" width="15px" height="15px"></a>
+                    <a href="https://www.instagram.com/jiahao_tam/" target="_blank"><img src="./Assets/ig.png" alt="Instagram" width="15px" height="15px"></a>
+                    <a href="https://www.linkedin.com/in/zhi-ying-pua-b99913257/" target="_blank"><img src="./Assets/ln.png" alt="LinkedIn" width="15px" height="15px"></a>
+                </div>
+                <!-- copyright notice -->
+                <p>&copy 2024 LASTMINUTE STUDIOS | All rights reserved</p>
+
+            </footer>
+        </div>
+        <!-- sidebar for mobile devices, hidden by default, only active when screen is smaller -->
+        <div id="sidebar">
+            <button id="xbar" onclick="closeBar()">✖</button>
+            <ul>
+                <li><a href="#about-us"><b>ABOUT</b></a></li>
+                <li><a href="#work"><b>WORK</b></a></li>
+                <li><a href="#services"><b>SERVICES</b></a></li>
+            </ul>
+        </div>
+    </body>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                document.getElementById("header").style.backgroundColor = "rgb(0, 0, 0, 0.5)";
+                document.getElementById("header").style.height = "35px";
+                document.getElementById("header").style.marginTop = "10px";
+                document.getElementById("header").style.border = "0.1px solid rgb(80, 80, 80, 0.7)";
+                document.getElementById("header").style.backdropFilter = "blur(8px)";
+            } else {
+                document.getElementById("header").style.backgroundColor = "rgb(0, 0, 0, 0)";
+                document.getElementById("header").style.marginTop = "20px";
+                document.getElementById("header").style.height = "45px";
+                document.getElementById("header").style.border = "none";
+                document.getElementById("header").style.backdropFilter = "blur(0px)";
+
+            }
+        }
+
+        function nextAbout(aboutNo) {
+            if (aboutNo == 2) {
+                document.getElementById("about1").style.display = "none";
+                document.getElementById("about3").style.display = "none";
+                document.getElementById("about2").style.display = "block";
+            } else if (aboutNo == 3) {
+                document.getElementById("about1").style.display = "none";
+                document.getElementById("about2").style.display = "none";
+                document.getElementById("about3").style.display = "block";
+            } else {
+                document.getElementById("about2").style.display = "none";
+                document.getElementById("about3").style.display = "none";
+                document.getElementById("about1").style.display = "block";
+            }
+        }
+
+        function showBar() {
+  			document.getElementById("showbar").classList.toggle("active");
+  			document.getElementById("sidebar").classList.toggle("active");
+  		}
+
+  		function closeBar() {
+            document.getElementById("showbar").classList.toggle("active");
+            document.getElementById("sidebar").classList.toggle("active");
+  		}
+    </script>
+</html>

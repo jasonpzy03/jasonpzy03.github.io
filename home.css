@@ -1,0 +1,121 @@
+/* Styling grid area home with display flex */
+.home {
+    grid-area: home;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    gap: 65px;
+    margin-top: 200px;
+    margin-left: 100px;
+    width: 80%;
+    height: 75vh;
+}
+
+/* Styling home title "Web Application Development and Design Studio" */
+.home h1{
+    line-height: 1.35;
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+/* Styling hyperlinks to other section of the website */
+.home-buttons a {
+    color: white;
+    margin: 0 15px;
+    padding: 15px 20px;
+    border: 1px solid white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/* Styling the left hyperlink */
+#home-button-left {
+    color: rgb(75, 162, 154);
+    background: linear-gradient(to left, white 50%, rgb(29,29,29, 0) 50%) right;
+    background-size: 200%;
+    transition: .2s ease-out;
+}
+
+#home-button-left:hover {
+    background-position: left;
+    color: white;
+    transition: .2s ease;
+}
+
+/* Styling the right hyperlink */
+#home-button-right {
+    background: linear-gradient(to left, rgb(29,29,29, 0) 50%, white 50%) right;
+    background-size: 200%;
+    transition: .2s ease-out;
+}
+
+#home-button-right:hover {
+    background-position: left;
+    transition: 0.2s ease;
+    color: rgb(75, 162, 154);
+}
+
+/* Styling grid area contact-box */
+.contact {
+    grid-area: contact-box;
+    display: flex;
+    flex-direction: column;
+    margin-top: 190px;
+    margin-right: 100px;
+    height: 50%;
+    border-radius: 10px;
+    background-color: white;
+    padding: 40px;
+}
+
+/* Styling contact-box title */
+.contact h6 {
+    color: black;
+    text-align: left;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+/* Styling contact-box input box */
+.input {
+    all: unset;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 95%;
+    margin: 20px 0;
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+
+/* Styling contact-box submit button */
+.submit-btn {
+    all: unset;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    background: linear-gradient(to left, rgb(75, 162, 154) 50%, white 50%) right;
+    background-size: 200%;
+    transition: .2s ease-out;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 95%;
+    margin: 20px 0;
+    padding: 15px 10px;
+    border: 1px solid rgb(75, 162, 154);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-position: left;
+    color: rgb(75, 162, 154);
+    transition: .2s ease;
+}
+
+/* Styling contact-box texts */
+.contact p {
+    text-align: justify;
+    color: black;
+    font-size: 15px;
+    margin: 0;
+}

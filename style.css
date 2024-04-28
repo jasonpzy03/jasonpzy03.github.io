@@ -1,0 +1,105 @@
+/* Remove default padding and margin for all elements such as p, a, h1 for us to design easier */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Scroll behavior smooth for hyperlinks href*/
+html {
+    scroll-behavior: smooth;
+}
+
+/* Setting up font family, background color, and others */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(19,42,59);
+    line-height: 1.5;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+}
+
+/* Setting up CSS grid layout with template areas */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'home contact-box'
+        'about-us about-us'
+        'about about'
+        'work work'
+        'services services'
+        'footer footer';
+    background-color: rgb(19,42,59);
+    background-image: url("./Assets/wireframe.png");
+}
+
+/* Triple bar icon that will replace navigation links in header, when the screen is small */
+#showbar {
+    all: unset;
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+    display: none;
+}
+
+/* When sidebar is active (opened), triple bar icon will be hidden */
+#showbar.active {
+    display: none;
+}
+
+/* Styling sidebar colors, shadows, transtions, positions*/
+#sidebar {
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	top: 0;
+	z-index: 3;
+	left: -200px;
+	background-color: #ebebeb;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: all 200ms;
+}
+
+/* When sidebar is active (opened), left becomes zero so that it appears on the screen, note that left is -200px when unopened */
+#sidebar.active {
+	left: 0;
+}
+
+/* Styling sidebar unordered list */
+#sidebar ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 20px auto;
+}
+
+#sidebar ul li {
+    list-style-type: none;
+}
+
+#sidebar ul li a{
+	padding: 15px 30px;
+	color: black;
+	text-decoration: none;
+}
+
+#sidebar a:hover {
+	color: rgb(75, 162, 154);
+}
+
+/* Sidebar's close button */
+#xbar {
+    display: inline;
+    all: unset;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+#xbar:hover {
+    color: rgb(75, 162, 154);
+}
+

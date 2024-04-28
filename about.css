@@ -1,0 +1,138 @@
+/* Defining grid area about-member's width and height */
+#about-member {
+    grid-area: about;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Member 2 and 3 information will not display on the screen by default */
+#about2, #about3 {
+    display: none;
+}
+
+/* Styling members image */
+.about img { 
+    float: left;
+    width: 40%;
+    height: 100vh;
+}
+
+/* Styling members description, defining it's size, background colors, padding */
+.about-description {
+    position: relative;
+    background-color: rgb(15,23,43);
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100vh;
+    padding: 45px 80px;
+    color: white;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Styling the description background image */
+.about-description img {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    opacity: 0.05;
+    left: 50%;
+    translate: -50% -50%;
+    top: 50%;
+}
+
+/* Styling the about-description h1, h3, p, h5 */
+.about-description h1, .about-description h3, .about-description p, .about-description h5 {
+    margin: 5px 0;
+    
+}
+
+.about-description h1 {
+    font-size: 50px;
+}
+
+.about-description p, .about-description h5 {
+    text-align: justify;
+    font-size: 15.5px;
+    color: rgb(131,140,169);
+}
+
+/* Element with this class will be color white to create a highlighting effect in the paragraphs */
+.highlight {
+    color: white;
+}
+
+/* Styling the texts that create another section in the description, e.g. "Programming Languages", "Achievements" */
+#about-desc-section {
+    margin-top: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Styling the programming languages unordered list in about-description */
+.programming-languages {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: none;
+    gap: 10px;
+    
+}
+
+.programming-languages li {
+    font-size: 13px;
+    width: min-content;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 5px 16px;
+    opacity: 1;
+    background-color: rgb(19,42,59);
+    color: rgb(108, 237, 224);
+    cursor: pointer;
+}
+
+/* Styling the achievements div */
+.about-achievements {
+    width: 100%;
+    height: fit-content;
+ }
+
+/* Styling the year of the achievement */
+.about-achievements span {
+   float: left;
+   color: rgb(96,111,134);
+   margin-right: 20px;
+   height: 100%;
+}
+
+/* Styling the title of the achievement */
+.about-achievements h6 {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+/* Styling the description of the achievement */
+.about-achievements p {
+    font-size: 15px;
+}
+
+/* Styling the navigation hyperlinks at the bottom */
+.previous-member, .next-member {
+    user-select: none;
+    color: rgb(108, 237, 224);
+    font-size: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.previous-member {
+    position: absolute;
+    bottom: 30px;
+}
+
+.next-member {
+    position: absolute;
+    bottom: 30px;
+    right: 80px;
+}

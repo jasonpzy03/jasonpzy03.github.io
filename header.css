@@ -1,0 +1,79 @@
+/* Styling website header, position is fixed for anchoring effect, using display flex */
+#header {
+    width: 85%;
+    position: fixed;
+    height: 45px;
+    background-color: rgb(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    left: 50%;
+    translate: -50%;
+    padding: 10px 25px 10px 25px;
+    border-radius: 100px;
+    transition: 0.2s ease;
+    z-index: 3;
+    grid-area: header;
+}
+
+/* Positioning header logo to be in the middle */
+.header-logo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 50%;
+    translate: -50%;
+}
+
+/* Styling welcoming heading */
+.header-logo h6 {
+    margin: 0;
+    font-weight: bold;
+    color: white;
+    font-size: 9px;
+}
+
+/* Styling header navigation menu using display flex */
+.header-nav-menu {
+    display: flex;
+    padding: 0;
+    gap: 30px;
+    align-items: center;
+    list-style: none;
+    font-size: 15px;
+}
+
+.header-nav-menu li a {
+    color: white;
+    text-decoration: none;
+    z-index: 2;
+    border-bottom: 0.1em solid transparent;
+}
+
+.header-nav-menu li a:hover {
+    border-color: currentColor;
+    transition: 0.5s ease;
+}
+
+/* Styling header contact us button, with border and background color, transitions to hover */
+#contact-us-btn {
+    border: 1px solid white;
+    padding: 6px;
+    border-radius: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to left, rgb(29,29,29, 0) 50%, white 50%) right;
+    background-size: 200%;
+    transition: .2s ease-out;
+}
+
+#contact-us-btn:hover {
+    background-position: left;
+    transition: 0.2s ease;
+    color: rgb(75, 162, 154);
+    background-color: white;
+}

@@ -1,0 +1,345 @@
+/* Changing CSS of elements according to different screen sizes, such as changing grid layout to horizontal only, reducing font sizes, padding, margins. */
+@media only screen and (max-width: 1245px) {
+    
+    .about-description h1 {
+        font-size: 40px;
+    }
+    .about-description p, .about-description h5 {
+        font-size: 13px;
+    }
+
+    .about-description h6 {
+        font-size: 13px;
+    }
+
+}
+
+@media only screen and (max-width: 1125px) {
+    
+    .contact h6 {
+        font-size: 22px;
+    }
+    
+    .input {
+        font-size: 13px;
+        margin: 20px 0;
+        padding: 10px 5px;
+    }
+    
+    .contact p {
+        font-size: 13px;
+    }
+
+    .submit-btn {
+        padding: 13px 3px;
+        font-size: 13px;
+    }
+
+    .contact {
+        height: 45%;
+    }
+
+    .service-box p {
+        font-size: 14.5px;
+    }
+       
+    .service-box-title {
+        font-size: 14px;
+    }
+
+    .service-box li {
+        font-size: 14.5px;
+    }
+
+}
+
+@media only screen and (max-width: 1050px) {
+    
+    .contact h6 {
+        font-size: 21px;
+    }
+    
+    .input {
+        font-size: 12px;
+    }
+    
+    .contact p {
+        font-size: 12px;
+    }
+    
+    .home h1{
+        font-size: 45px;
+        margin-bottom: 25px;
+    }
+
+    .contact {
+        height: 45%;
+    }
+
+    .about-description h1 {
+        font-size: 38px;
+    }
+    .about-description p, .about-description h5 {
+        font-size: 12.5px;
+    }
+
+    .about-description h6 {
+        font-size: 12.5px;
+    }
+
+}
+
+@media only screen and (max-width: 980px) {
+    
+    .home h1{
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 0px;
+    }
+
+    .home-buttons a {
+        font-size: 12px;
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .contact p {
+        font-size: 11px;
+    }
+
+    .home-buttons {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    #about-us span {
+        font-size: 15px;
+    }
+    
+    #about-us p {
+        font-size: 14.5px;
+    }
+    
+    #about-us a {
+        font-size: 14.5px;
+    }
+
+    .about-description h1 {
+        font-size: 33px;
+    }
+    .about-description p, .about-description h5 {
+        font-size: 11px;
+    }
+
+    .about-description h6 {
+        font-size: 11px;
+    }
+
+    .about-desc-wrapper {
+        width: 70%;
+    }
+
+    .service-box p {
+        font-size: 13.5px;
+    }
+       
+    .service-box-title {
+        font-size: 13px;
+    }
+
+    .service-box li {
+        font-size: 13.5px;
+    }
+    
+}
+
+/* Changing grid template areas to be arranges horizontally, favors mobile screens */
+@media only screen and (max-width: 900px) {
+    
+    .header-nav-menu li {
+        display: none;
+    }
+
+    #showbar {
+        display: block;
+    }
+
+    .home h1{
+        font-size: 50px;
+    }
+
+    .home-buttons a {
+        font-size: 15px;
+    }
+
+    .home {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact {
+        width: 60%;
+        height: 70%;
+        margin: 0 auto;
+
+    }
+
+    #about-us span {
+        font-size: 14px;
+    }
+    
+    #about-us p {
+        font-size: 13.5px;
+    }
+    
+    #about-us a {
+        font-size: 13.5px;
+    }
+
+    .about-container {
+        margin-top: 50px;
+    }
+    
+    .grid-container {
+        grid-template-areas:
+            'header'
+            'home'
+            'contact-box'
+            'about-us'
+            'about'
+            'work'
+            'services'
+            'footer';
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .about img {
+        width: 100%;
+        grid-area: about-img;
+
+    }
+
+    .about-description {
+        width: 100%;
+        grid-area: about-desc;
+    }
+    
+    .about {
+        display: grid;
+        grid-template-areas:
+            'about-img'
+            'about-desc';
+    }
+
+    #about-href {
+        min-height: 200vh;
+    }
+
+    .about-desc-wrapper {
+        width: 60%;
+    }
+
+    .services-wrapper {
+        flex-direction: column;
+    }
+
+    #services {
+        height: 150vh;
+    }
+
+    .service-box {
+        height: 35%;
+    }
+
+    .service-box p {
+        font-size: 10.5px;
+    }
+       
+    .service-box-title {
+        font-size: 10px;
+    }
+
+    .service-box li {
+        font-size: 10.5px;
+    }
+}
+
+@media only screen and (max-width: 655px) {
+    .about-desc-wrapper {
+        width: 80%;
+        padding: 20px 40px;
+    }
+
+    .home {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    #about-us span {
+        font-size: 11px;
+    }
+    
+    #about-us p {
+        font-size: 11.5px;
+    }
+    
+    #about-us a {
+        font-size: 11.5px;
+    }
+
+    .nav-logo a {
+        font-size: 18px;
+    }
+    
+    .nav-logo p {
+        font-size: 8px;
+    }
+
+    .nav-contact a{
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .about-description h1 {
+        font-size: 32px;
+    }
+    .about-description p, .about-description h5 {
+        font-size: 10px;
+    }
+
+    .about-description h6 {
+        font-size: 10px;
+    }
+
+    #about-us span {
+        font-size: 10px;
+    }
+    
+    #about-us p {
+        font-size: 10.5px;
+    }
+    
+    #about-us a {
+        font-size: 10.5px;
+    }
+
+    .nav-logo a {
+        font-size: 14px;
+    }
+    
+    .nav-logo p {
+        font-size: 7px;
+    }
+
+    .nav-contact a{
+        font-size: 10px;
+    }
+
+    
+}

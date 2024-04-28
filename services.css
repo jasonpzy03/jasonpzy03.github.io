@@ -1,0 +1,81 @@
+/* Styling grid area services with display flex, it's width and height and background color, etc */
+#services {
+    grid-area: services;
+    width: 100%;
+    height: 110vh;
+    background-color: rgb(15,23,43);
+    border: 0.5px solid rgb(131,140,169, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* services grid area title */
+#services span {
+    background-color: rgb(19,42,59);
+    border: 0.5px solid rgb(108, 237, 224);
+    color: rgb(108, 237, 224);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 16px;
+    padding: 7px 30px;
+    margin-bottom: 30px;
+}
+
+/* services wrapper that contains service boxes, with top and bottom border to create divider */
+.services-wrapper {
+    border-top: 0.5px solid rgb(131,140,169, 0.5);
+    border-bottom: 0.5px solid rgb(131,140,169, 0.5);
+    width: 70%;
+    height: 70%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling service box with border, background color, padding */
+.service-box {
+    height: 70%;
+    background-color: rgb(12, 18, 34);
+    border: 1px solid rgb(131,140,169, 0.5);
+    border-radius: 15px;
+    padding: 40px 30px;
+    position: relative;
+}
+
+/* Styling service box hyperlink */
+.service-box a {
+    all: unset;
+    position: absolute;
+    bottom: 25px;
+    right: 40px;
+    text-align: right;
+    cursor: pointer;
+}
+
+/* Styling service box description */
+.service-box p {
+    text-align: justify;
+    font-size: 15.5px;
+    color: rgb(131,140,169);
+}
+   
+/* Styling service box title */
+.service-box-title {
+    color: rgb(108, 237, 224);
+    font-size: 15px;
+}
+
+/* Styling service box unordered list */
+.service-box ul {
+    margin-top: 30px;
+}
+
+.service-box li {
+    margin: 10px 0;
+    font-weight: bold;
+    color: rgb(131,140,169);
+}
