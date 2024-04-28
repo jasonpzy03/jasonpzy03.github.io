@@ -302,13 +302,27 @@
         font-size: 12px;
     }
 
+    .programming-languages li {
+        font-size: 8px;
+    }
+
+    
 }
 
 @media only screen and (max-width: 450px) {
 
-    .about-description h1 {
-        font-size: 32px;
+    #about-desc-section {
+        margin-top: 10px;
     }
+    
+    .about-description h1 {
+        font-size: 28px;
+    }
+
+    .about-description h3 {
+        font-size: 12px;
+    }
+
     .about-description p, .about-description h5 {
         font-size: 10px;
     }
