@@ -161,6 +161,11 @@
         display: none;
     }
 
+    #contact-us-btn {
+        padding: 3px;
+        font-size: 12px;
+    }
+
     #showbar {
         display: block;
     }
