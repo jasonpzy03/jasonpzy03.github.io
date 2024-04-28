@@ -36,7 +36,7 @@
                     <h6 id="nav-logo-p">Welcome to our universe.</h6>
                 </div>
                 <!-- contact button -->
-                <a id="contact-us-btn" href="#"><b>Contact us</b></a>
+                <a id="contact-us-btn" href="#contact-href"><b>Contact us</b></a>
             </div>
             <!-- home -->
             <div class="home">
@@ -49,7 +49,7 @@
                 </div>
             </div>
             <!-- contact-box -->
-            <div class="contact">
+            <div id="contact-href" class="contact">
                 <h6>Provide email and we will reach out to you</h6>
                 <p>Don't miss out and get access to our services: front-end and back-end enquiries, full-stack development services, easy website deployment, learning resources and more.</p>
                 <input class="input" type="email" name="Email" placeholder="Email Address">
@@ -258,7 +258,7 @@
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 180) {
                 document.getElementById("header").style.backgroundColor = "rgb(0, 0, 0, 0.5)";
                 document.getElementById("header").style.height = "35px";
                 document.getElementById("header").style.marginTop = "10px";

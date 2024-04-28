@@ -122,7 +122,7 @@
     user-select: none;
     color: rgb(108, 237, 224);
     font-size: 15px;
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
 }
 

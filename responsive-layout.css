@@ -198,10 +198,6 @@
         font-size: 13.5px;
     }
 
-    .about-container {
-        margin-top: 50px;
-    }
-    
     .grid-container {
         grid-template-areas:
             'header'
@@ -218,23 +214,14 @@
 
     .about img {
         width: 100%;
-        grid-area: about-img;
 
     }
 
     .about-description {
         width: 100%;
-        grid-area: about-desc;
-    }
-    
-    .about {
-        display: grid;
-        grid-template-areas:
-            'about-img'
-            'about-desc';
     }
 
-    #about-href {
+    #about-member {
         min-height: 200vh;
     }
 
@@ -310,6 +297,15 @@
 }
 
 @media only screen and (max-width: 450px) {
+
+    .previous-member, .next-member {
+        bottom: 12px;
+        font-size: 12px;
+    }
+
+    .about-achievements span {
+        font-size: 12px;
+     }
 
     #about-desc-section {
         margin-top: 10px;
