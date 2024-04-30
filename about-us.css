@@ -46,6 +46,7 @@
 
 /* Styling the hyperlink that links to about-member section with team members individual info */
 #about-us a {
+    text-decoration: none;
     width: 80%;
     text-align: right;
     color: rgb(108, 237, 224);
